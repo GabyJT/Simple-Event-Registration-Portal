@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .registration-entry {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Registration Portal</h1>
+    <!-- Registration Form -->
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="eventDate">Event Date:</label>
+        <select id="eventDate" name="eventDate" required>
+            <option value="">Choose a date</option>
+            <option value="2023-06-01">June 22, 2024</option>
+            <option value="2023-06-15">June 29, 2024</option>
+            <option value="2023-07-01">July 6, 2024</option>
+        </select><br><br>
+
+        <label>Meal Preference:</label>
+        <input type="checkbox" id="vegetarian" name="mealPreference" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+        <input type="checkbox" id="nonVegetarian" name="mealPreference" value="Non-Vegetarian">
+        <label for="nonVegetarian">Non-Vegetarian</label>
+        <input type="checkbox" id="vegan" name="mealPreference" value="Vegan">
+        <label for="vegan">Vegan</label><br><br>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+
+    <!-- Div for displaying submitted registration details -->
+    <div id="registrationDisplay"></div>
+
+    <!-- Linking to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
